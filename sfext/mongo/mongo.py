@@ -3,7 +3,7 @@ import pymongo
 
 __all__ = ['MongoDB', 'mongodb']
 
-class MongoModule(Module):
+class MongoDB(Module):
     """a simple mongodb module for starflyer to provide a database connection
     """
 
@@ -12,7 +12,7 @@ class MongoModule(Module):
     defaults = {
         'mongodb_name'      : "",                # use dummy mailer?
         'mongodb_host'      : "localhost",       # host to connect to
-        'mongodb_port'      : 25,                # port to use
+        'mongodb_port'      : 27017,                # port to use
         'debug'             : False,
     }
 
